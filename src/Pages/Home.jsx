@@ -42,7 +42,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-[#0d1117] select-none">
+    <div className="fixed inset-0 overflow-hidden bg-[#0d1117] select-none">
       <Header />
 
       {/* Grid background layer */}

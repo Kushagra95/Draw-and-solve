@@ -42,8 +42,8 @@ export default function ControlPanel({
   }, []);
 
   return (
-    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 w-[95%] max-w-[840px] px-2 pointer-events-none">
-      <div className="glass-panel w-full pl-4 pr-6 py-4 rounded-3xl flex flex-col md:flex-row gap-4 items-center justify-between shadow-2xl pointer-events-auto">
+    <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 z-30 w-[96%] max-w-[840px] pointer-events-none">
+      <div className="glass-panel w-full px-3 md:pl-4 md:pr-6 py-3 md:py-4 rounded-[1.5rem] md:rounded-3xl flex flex-col md:flex-row gap-3 md:gap-4 items-center justify-between shadow-2xl pointer-events-auto">
 
         {/* Group 1: Tools selection */}
         <div className="flex items-center gap-2">
