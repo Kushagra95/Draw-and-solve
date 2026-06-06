@@ -36,6 +36,7 @@ export default function Home() {
       setToast({ show: true, text, type, isLoading: false, error: null });
       canvas.handleClear();
     } catch (err) {
+      console.error("Actual Gemini API Error:", err);
       setToast({ show: true, text: '', type, isLoading: false, error: err.message });
     }
   };

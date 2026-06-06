@@ -11,7 +11,7 @@ export async function analyzeCanvas(actionType, base64ImageData) {
   if (!base64ImageData) throw new Error('Canvas is empty. Draw something first.');
 
   const genAI = new GoogleGenerativeAI(key);
-  const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-flash-lite-latest' });
 
   const result = await model.generateContent([
     { text: PROMPTS[actionType] },

@@ -146,10 +146,10 @@
   animation: shrinkBar 8s linear forwards;
 }
 
-/* Toast top slide-in animation */
+/* Toast right slide-in animation */
 @keyframes toastIn {
-  0% { opacity: 0; transform: translate(-50%, -10px); }
-  100% { opacity: 1; transform: translate(-50%, 0); }
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .animate-toast-in {

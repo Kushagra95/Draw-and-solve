@@ -24,7 +24,7 @@ export default function Toast({ show, text, type, isLoading, error, onClose }) {
   const label = isLoading ? 'COMPILING' : 'OUTPUT';
 
   return (
-    <div className="fixed top-24 left-1/2 -translate-x-1/2 z-50 w-[92%] sm:w-80 md:w-96 animate-toast-in">
+    <div className="fixed top-24 right-6 z-50 w-[92%] sm:w-80 md:w-96 animate-toast-in">
       <div className="glass-panel rounded-2xl shadow-2xl overflow-hidden">
         <div className="flex items-start gap-3 p-4">
           {/* Icon */}
