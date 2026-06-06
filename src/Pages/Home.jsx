@@ -9,7 +9,7 @@ import CursorPreview from '../Components/CursorPreview';
 import Toast from '../Components/Toast';
 
 const COLOR_PRESETS = [
-  { name: 'Forest Green', value: '#1b4332', class: 'bg-[#1b4332] border-[#2d6a4f]' },
+  { name: 'Forest Green', value: '#286149ff', class: 'bg-[#1b4332] border-[#2d6a4f]' },
   { name: 'Emerald Green', value: '#2d6a4f', class: 'bg-[#2d6a4f] border-[#40916c]' },
   { name: 'Mint Green', value: '#52b788', class: 'bg-[#52b788] border-[#74c69d]' },
   { name: 'Deep Teal', value: '#0f766e', class: 'bg-teal-700 border-teal-600' },
@@ -45,9 +45,8 @@ export default function Home() {
       <Header />
 
       {/* Grid background layer */}
-      <div className={`absolute inset-0 pointer-events-none z-0 transition-all duration-300 ${
-        gridType === 'ruled' ? 'canvas-grid-ruled' : gridType === 'dot' ? 'canvas-grid-dot' : ''
-      }`} />
+      <div className={`absolute inset-0 pointer-events-none z-0 transition-all duration-300 ${gridType === 'ruled' ? 'canvas-grid-ruled' : gridType === 'dot' ? 'canvas-grid-dot' : ''
+        }`} />
 
       <Canvas
         canvasRef={canvas.canvasRef}
